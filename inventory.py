@@ -10,7 +10,7 @@ def remove_expired_items(items, today):
         (i.e., non-expired items).
     """
     result = []
-    for i in range(len(items)):
+    for i in range(len(items) - 1):
         name, expiry_date = items[i]
         if expiry_date > today:
             result.append((name, expiry_date))
